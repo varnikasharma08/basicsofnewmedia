@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" auto>
+    <title>my restaurant</title>                                                                                                                             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="justify-content: center;" class="w3-top w3-hide-small">
+        <div class="w3-bar w3-large w3-white w3-hover-opacity-off" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+        </div>
+    </div>
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Open from 10am to 10pm</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:100px;">I LOVE<br>FOOD</span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>I LOVE<br>FOOD</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">let me see the menu</a> </p>
+    </div>
+</header>
+    <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+        <h1 class="w3-center w3-jumbo">THE MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'pizza');" id="myLink""><div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div></a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'drinks');" id="myLink""><div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div></a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'burger');" id="myLink""><div class="w3-col s4 tablink w3-padding-large w3-hover-red">Burger</div></a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'momo');" id="myLink""><div class="w3-col s4 tablink w3-padding-large w3-hover-red">momo</div></a>
+        </div>
+        <div id="pizza" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Margherita</b><span class="w3-right w3-tag w3-dark-grey w3-round">Rs.450</span></h1>
+            <p class="text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+            <hr>
+            <h1><b>cheese dominator</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.550</span></h1>
+            <p class="text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+            <hr>
+            <h1><b>Meat Town</b> <span class="w3-red w3-tag w3-round">Hot!</span>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.700</span></h1>
+            <p class="text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, chicken</p>
+        </div>
+        <div id="drinks" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>virgin mojitto</b><span class="w3-tag w3-grey w3-round">Popular</span>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.60</span></h1>
+            <p class="text-grey">lemon with mint and spices</p>
+            <hr>
+            <h1><b>green tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.70</span></h1>
+            <p class="text-grey">made from freshly assam imported green tea leaves</p>
+            <hr>
+            <h1><b>lemon tea</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.100</span></h1>
+            <p class="text-grey">Customization is available</p>
+        </div>
+        <div id="burger" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>aaloo tikki</b><span class="w3-right w3-tag w3-dark-grey w3-round">Rs.45</span></h1>
+            <p class="text-grey">aaloo pattie with customizable buns and sauces</p>
+            <hr>
+            <h1><b>veggie loader</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.70</span></h1>
+            <p class="text-grey">pea and aaloo pattie with fram fresh veggie and whole wheat bun</p>
+            <hr>
+            <h1><b>cheese monster</b> <span class="w3-red w3-tag">Hot!</span>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.200</span></h1>
+            <p class="text-grey">monster burger with double pattie and liquid cheese on running</p>
+        </div>
+        <div id="momo" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>veg momo(soya bean)</b><span class="w3-right w3-tag w3-dark-grey w3-round">Rs.50</span></h1>
+            <p class="text-grey">medium size soya momos</p>
+            <hr>
+            <h1><b>tandoori momo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.80</span></h1>
+            <p class="text-grey">momo grilled over tandoor with coating of barbeque sauce available in veg and non-veg both</p>
+            <hr>
+            <h1><b>fried momo</b> <span class="w3-red w3-tag">Hot!</span>
+            <span class="w3-right w3-tag w3-dark-grey w3-round">Rs.70</span></h1>
+            <p class="text-grey">momo covered with crispy coating and juicy from inside available in veg and non-veg both</p>
+        </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-grey w3-grayscale w3-xlarge" id="about">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+          <p>The Restaurant was founded in rohini by Miss Varnika Sharma in 2002 with the help of her family </p>
+          <p><strong>The Chef?</strong> Miss Varnika Sharma herself<img src="Screenshot (89).png" style="width:150px" class="w3-right" alt="Chef"></p>
+          <p>We are proud of our interiors.</p>
+          <img src="gettyimages-1158221681-612x612.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+          <h1><b>Opening Hours</b></h1>
+          
+          <div class="w3-row">
+            <div class="w3-col s6">
+              <p>Mon & Tue CLOSED</p>
+              <p>Wednesday 10.00 - 22.00</p>
+              <p>Thursday 10:00 - 22:00</p>
+            </div>
+            <div class="w3-col s6">
+              <p>Friday 10:00 - 22:00</p>
+              <p>Saturday 10:00 - 22:00</p>
+              <p>Sunday Closed</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    <div id="contact" class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin: bottom 67px;">Contact</h1>
+            <p>Find us at rohini sector 9 999999999</p>
+            <p><span class="w3-tag">FYI!</span>We offer full-services catering for any event,large or small.we understand your needs 
+            and we will cater the food to satisfy the biggest criteria of them all,both look and taste </p> 
+            <p class="w3-xxlarge">
+                <strong>reserve</strong>
+                a table,ask for today's special or just send us a message:
+            </p>
+            <form>
+            <label for="fname">Full Name</label>
+            <input type="text" class="w3-input w3-padding-16 w3-border" name="name" id="fname" onkeyup="validateForm();" required>
+            <span class="error" id="nameErr"></span><br>
+            <label for="nopeople">Number of People</label>
+            <input type="text" class="w3-input w3-padding-16 w3-border" name="nopeople" id="people" onkeyup="validateForm();" required>
+            <span class="error" id="peopleErr"></span><br>
+            <label for="phno">Phone number</label>
+            <input type="text" class="w3-input w3-padding-16 w3-border" name="phno" id="phno" onkeyup="validateForm();" required>
+            <span class="error" id="phnoErr"></span><br>
+            <label for="date">Date</label>
+            <input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="10-12-2023 20:00"><br>
+            <label for="adr">Address</label>
+            <textarea name="address" class="w3-input w3-padding-16 w3-border" id="faddress" cols="100" rows="7" onkeyup="validateForm();"></textarea></p>
+            <span class="error" id="addressErr"></span><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" class="w3-input w3-padding-16 w3-border" id="femail" onkeyup="validateForm();"></p>
+            <span class="error" id="emailErr"></span><br>
+            <label for="msg">Message \ Special requirements</label>
+            <input class="w3-input w3-padding-16 w3-border" type="text" required name="Message"><br>
+            <p><button class="w3-button w3-light-grey" type="submit">send message</button></p>
+            </form>
+        </div>
+    </div>
+    <footer class="foot">
+        <p align="center">Powered by <a href="https://drive.google.com/file/d/1mGguW3pYMd4QOARQVjM6imbU-uQvIn3o/view?usp=sharing" title="Varnikainfotech" target="_blank">varnika&co</a></p>
+    </footer>
+    <script src="script.js">
+    </script>
+</body>
+</html>
